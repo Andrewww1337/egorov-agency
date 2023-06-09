@@ -1,0 +1,112 @@
+.footerWraper {
+  background-color: #162c4e;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1698px;
+  height: 192px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputInFooter {
+  display: flex;
+  width: 100%;
+  height: 59px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 40px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  padding-left: 27px;
+}
+.inputInFooter:focus {
+  outline: none;
+}
+
+.inputWithButton {
+  position: relative;
+  max-width: 440px;
+  width: 100%;
+  margin: 0 20px;
+}
+.inputButton {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  right: -19px;
+  top: calc(50% - 43px / 2);
+  background-color: #df2224;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fakeDiv {
+  max-width: 160px;
+  width: 100%;
+  display: flex;
+}
+.footerEventButton {
+  max-width: 160px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (max-width: 920px) {
+  .footer {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .inputInFooter {
+    height: 41px;
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .footerEventButton {
+    font-size: 16px;
+  }
+  .inputButton {
+    width: 33px;
+    height: 33px;
+    right: -15px;
+    top: calc(50% - 33px / 2);
+    background-color: #df2224;
+  }
+}
+@media (max-width: 580px) {
+  .footer {
+    height: 141px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  .inputInFooter {
+    display: flex;
+    width: 100%;
+    height: 41px;
+    border-radius: 40px;
+    font-size: 14px;
+    padding-left: 15px;
+  }
+}

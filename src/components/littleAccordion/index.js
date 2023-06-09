@@ -1,0 +1,1 @@
+export { LittleAccordion } from "./littleAccordion";

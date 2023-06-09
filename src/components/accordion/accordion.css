@@ -1,0 +1,176 @@
+.container {
+  width: 100%;
+  max-width: 1698px;
+  margin: 0 auto 99px;
+}
+.accordionTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 104%;
+  text-transform: uppercase;
+  color: #162c4e;
+  opacity: 0.39;
+  margin-top: 110px;
+  margin-bottom: 40px;
+}
+.accordion {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.accordionHeader {
+  display: block;
+  max-width: 85px;
+  width: 100%;
+  height: 682px;
+  background-color: #162c4e;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  color: #fff;
+  font-family: "Roboto"; /*  Простите, шрифт - "SF Pro Display" я не нашел */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.accordionHeaderNone {
+  position: relative;
+  display: block;
+  max-width: 85px;
+  width: 100%;
+  height: 682px;
+  background: url("https://proprikol.ru/wp-content/uploads/2021/01/kartinki-schastlivyh-lyudej-33.jpg");
+  background-size: cover;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  color: #fff;
+  font-family: "Roboto"; /*  Простите, шрифт - "SF Pro Display" я не нашел */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.accordionHeaderNone:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162c4e 100%);
+}
+.cardNumber {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.headerTitle {
+  color: #ffffff;
+  white-space: nowrap;
+  font-family: "Roboto"; /*  Простите, шрифт - "SF Pro Display" я не нашел */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  transform: rotate(-90deg);
+}
+
+.accordion-content {
+  max-width: 0;
+  height: 682px;
+  transition: all 0.9s ease-out;
+}
+
+.accordion-content-on {
+  display: flex;
+  flex-direction: row;
+  max-width: 995px;
+  width: 100%;
+  height: 682px;
+  transition: all 0.9s ease-out;
+}
+.cardImg {
+  width: 100%;
+  height: 682px;
+  overflow: hidden;
+}
+.oneAccordion {
+  display: flex;
+  height: 682px;
+  flex-direction: row;
+}
+.aboutCard {
+  position: absolute;
+  width: 364px;
+  margin: 0;
+  height: 682px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(20px);
+  transition: all 1.1s ease-out;
+}
+.aboutCardNone {
+  display: none;
+  width: 0px;
+}
+.aboutCardNone > h3 {
+  font-size: 0px;
+  transition: all 1.9s ease-out;
+}
+.aboutCardNone > p {
+  display: none;
+}
+.aboutCard > h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 42px;
+}
+.aboutCardNone > a {
+  display: none;
+  transition: all 0.9s ease-out;
+}
+.aboutCard > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 42px;
+  margin-top: 12px;
+}
+.aboutCard > a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  max-width: 256px;
+  width: 100%;
+  height: 62px;
+  margin-left: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  border-left: 7px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  margin-top: 25px;
+}

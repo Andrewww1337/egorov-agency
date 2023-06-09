@@ -1,0 +1,61 @@
+.popUp {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(22, 44, 78, 0.6);
+  transition: all 0.5s;
+  opacity: 1;
+}
+.popUpMessageWindow {
+  width: 320px;
+  height: 370px;
+  background: #ffffff;
+  border: 1px solid rgba(19, 89, 120, 0.07);
+  border-radius: 2px;
+  position: relative;
+}
+.crossWindow {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  cursor: pointer;
+}
+.popUpTitle {
+  margin-top: 97px;
+  margin-bottom: 29px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 104%;
+  text-transform: uppercase;
+  color: #162c4e;
+}
+.aboutSubscribe {
+  margin: 0 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.popUpButton {
+  width: 200px;
+  height: 60px;
+  background: #1d4169;
+  border-radius: 40px;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 45px;
+  cursor: pointer;
+}
